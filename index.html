@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<main class="first_tag">
+<div class="play_options">
+    <div class="category_area">
+        <label class="heading_label" for="category">Select Category</label>
+        <br>
+        <input class="heading_input" id="category" type="text" placeholder="  Any Category">
+
+        <ul class="options" id="category_options">
+            <li>Any Category</li>
+            <li>General Knowledge</li>
+            <li>Entertainment: Books</li>
+            <li>Entertainment: Film</li>
+            <li>Entertainment: Music</li>
+            <li>Entertainment: Musicals & Theatres</li>
+            <li>Entertainment: Television</li>
+            <li>Entertainment: Video Games</li>
+            <li>Entertainment: Board Games</li>
+            <li>Science & Nature</li>
+            <li>Science: Computers</li>
+            <li>Science: Mathematics</li>
+            <li>Mythology</li>
+            <li>Sports</li>
+            <li>Geography</li>
+            <li>History</li>
+            <li>Politics</li>
+            <li>Art</li>
+            <li>Celebrities</li>
+            <li>Animals</li>
+            <li>Vehicles</li>
+            <li>Entertainment: Comics</li>
+            <li>Science: Gadgets</li>
+            <li>Entertainment: Japanese Anime & Manga</li>
+            <li>Entertainment: Cartoon & Animations</li>
+        </ul>
+    </div>
+
+    <div class="difficulty_area">
+        <label class="heading_label" for="difficulty">Select Difficulty</label>
+        <br>
+        <input class="heading_input" id="difficulty" type="text" placeholder="  Any Difficulty">
+
+        <ul class="options" id="difficulty_options">
+            <li>Any Difficulty</li>
+            <li>Easy</li>
+            <li>Medium</li>
+            <li>Hard</li>
+        </ul>
+    </div>
+
+    <div class="type_area">
+        <label class="heading_label" for="type">Select Type</label>
+        <br>
+        <input class="heading_input" id="type" type="text" placeholder="  Any Type">
+
+        <ul class="options" id="type_options">
+            <li>Any Type</li>
+            <li>Multiple Choice</li>
+            <li>True / False</li>
+        </ul>
+    </div>
+</div>
+
+<button id="start_btn">Start Game</button>
+</main>
+
+<main class="second_tag">
+<div class="image_second_tag">
+    <div class="game_area">
+        <div class="top_game_area">
+            <div class="question_count">Question</div>
+            <div class="time_count">Time Left: <span class="time_countdown"></span></div>
+        </div>
+        <div class="question">Here goes the question</div>
+        <ul class="answer_options"></ul>
+        <p class="score">Score: <span class="score_count">0</span></p>
+        <button class="submit_btn">Submit</button>
+
+    </div>
+</div>
+</main>
+    <script src="app.js"></script>
+</body>
+</html>
